@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.1.7/chance.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="elements.js"></script>
+  <script src="banners.js"></script>
+</head>
+
+<body>
+  <div class="flex-container" id="holder"></div>
+</body>
+
+<footer>
+  <script>
+    const genClass = (roll) => {
+      const output = `star${roll.stars} ${roll.type == 'character' ? 'bigbg' : 'smallbg'}`;
+      return output;
+    }
+
+    async function genPage() {
+      const itemList = await getItems();
+      for(let item of itemList) {
+        /* Parent element */
+        const newDiv = document.createElement("div");
+        newDiv.className = genClass(item); 
+        newDiv.style.backgroundImage = `url('${item.image}')`;
+        document.getElementById("holder").appendChild(newDiv);
+
+        /* Stars */
+        const newDivStars = document.createElement("p");
+        newDiv.appendChild(newDivStars);
+
+        /* Element Image */
+        const elementImg = document.createElement('img');
+        elementImg.src = getElementImage(item.element);
+        newDivStars.appendChild(elementImg);
+
+        newDivStars.append(elementImg, '★'.repeat(item.stars))
+      }
+    }
+    genPage();
+  </script>
+</footer>
+</html>
