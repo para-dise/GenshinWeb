@@ -1,0 +1,85 @@
+{
+  "tier5": [
+    {
+        "name": "qiqi",
+        "type": "character",
+        "displayname": "Qiqi",
+        "stars": 5,
+        "element": "cryo",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Character_Qiqi_Portrait.png"
+    },
+    {
+        "name": "venti",
+        "type": "character",
+        "displayname": "Venti",
+        "stars": 5,
+        "element": "anemo",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Venti_Portrait.png"
+    },
+    {
+        "name": "keqing",
+        "type": "character",
+        "displayname": "Keqing",
+        "stars": 5,
+        "element": "anemo",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/8/81/Character_Keqing_Portrait.png"
+    },
+    {
+        "name": "mona",
+        "type": "character",
+        "displayname": "Mona",
+        "stars": 5,
+        "element": "hydro",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/f/fe/Character_Mona_Portrait.png"
+    },
+    {
+        "name": "diluc",
+        "type": "character",
+        "displayname": "Diluc",
+        "stars": 5,
+        "element": "pyro",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/b/bc/Character_Diluc_Portrait.png"
+    },
+    {
+        "name": "jean",
+        "type": "character",
+        "displayname": "Jean",
+        "stars": 5,
+        "element": "anemo",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Character_Jean_Portrait.png"
+    }
+  ],
+  "tier4": [
+    {
+        "name": "beidou",
+        "type": "character",
+        "displayname": "Beidou",
+        "stars": 4,
+        "element": "electro",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/7/74/Character_Beidou_Portrait.png"
+    },
+    {
+        "name": "fischl",
+        "type": "character",
+        "displayname": "Fischl",
+        "stars": 4,
+        "element": "electro",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Fischl_Portrait.png"
+    }
+  ],
+  "tier3": [
+    {
+        "name": "w1-dark-iron-sword",
+        "type": "sword",
+        "displayname": "Dark Iron Sword",
+        "stars": 3,
+        "element": "sword",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/3a/Weapon_Dark_Iron_Sword.png"
+    }
+  ],
+  "chances": {
+    "tier5": 0.600,
+    "tier4": 5.100,
+    "tier3": 94.300
+  }
+}
